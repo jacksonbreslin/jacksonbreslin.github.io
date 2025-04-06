@@ -1,12 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
+  background-color: rgba(247, 186, 74, 0.657) !important; */
+  font-family:Georgia, serif;
   max-width: 70rem;
-  margin-left: 10px;
-  margin-right: 1opx;
+  margin-left: 30px;
+  margin-right: 10px;
 }
 
 .newheader {
-  background-color: darkblue;
+  background-color: rgb(30, 0, 255);
   color: white;
   font-size: 18px;
   padding-top: 10px;
@@ -14,11 +15,17 @@ body {
   padding-left: 10%;
   padding-right: 10%;
   margin-bottom: 15px;
+  border: 1px solid #000000; 
+border-radius: 12px;
 }
 
 img {
-  width: 70%;
- 
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #000000; 
+border-radius: 12px;
+
 }
 
 .caption {
@@ -31,15 +38,27 @@ img {
 h1 {
   font-style: bold;
   font-size: 40px;
+  text-align: center;
 }
 
 h2 {
   font-size: 24px;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 p {
   font-size: 20px;
+  text-align: center;
+}
+
+.fancytext {
+  font-family:Georgia, serif;
+}
+
+
+.parsmall {
+  max-width: 150px
 }
 
 .otherimg {
@@ -48,4 +67,24 @@ p {
   margin-right: auto;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: whitesmoke;
+}
+
+/* selected link */
+a:active {
+  color: hotpink;
 }
