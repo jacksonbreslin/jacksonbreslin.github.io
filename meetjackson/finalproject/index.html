@@ -1,33 +1,218 @@
- <!-- Google Fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ever-changing outlook on the media</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
 
- <!-- Your custom CSS -->
- <link rel="stylesheet" href="../main.css">
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="../main.css">
 
- <!-- Bootstrap CSS -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- Mobile responsive enhancements -->
+    <style>
+        body {
+            overflow-x: hidden;
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        /* Change headings to Anton font */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Anton', sans-serif !important;
+            letter-spacing: 0.02em;
+        }
+        
+        /* Override roboto-slab class to use Anton instead */
+        .roboto-slab {
+            font-family: 'Anton', sans-serif !important;
+        }
+        
+        /* Ensure paragraphs use Roboto Slab */
+        .article-content p {
+            font-family: 'Roboto Slab', serif;
+            line-height: 1.7;
+        }
+        
+        /* Center the main title */
+        .main-title {
+            text-align: center;
+            width: 100%;
+            display: block;
+        }
+        
+        /* Keep byline left-aligned */
+        .author-byline {
+            text-align: left;
+            display: block;
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .article-content {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+            
+            h1.roboto-slab {
+                font-size: 1.8rem;
+            }
+            
+            h3.roboto-slab {
+                font-size: 1.2rem;
+            }
+        }
+        
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        }
+        
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        .chart-container iframe {
+            width: 100% !important;
+            min-width: 100% !important;
+        }
+        
+        /* Full-width navbar styles */
+        .navbar {
+            width: 100vw;
+            margin-left: -50vw;
+            left: 50%;
+            position: relative;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
 </head>
 <body>
+    <!-- Full-width Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Jackson Breslin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="../aboutme/index.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../myreel/index.html">Reel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../assignments/index.html">Assignments</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../finalproject/index.html">Final Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index_working.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+    
+    <div class="container mt-4">
+        <header class="mb-4">
+            <h1 class="roboto-slab main-title">Buried under the rubble: Journalism in the digital age</h1>
+            <h3 class="roboto-slab author-byline">By Jackson Breslin</h3>
+        </header>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Meet Jackson Breslin</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" href="../aboutme/index.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="../myreel/index.html">Reel</a></li>
-        <li class="nav-item"><a class="nav-link" href="../assignments/index.html">Assignments</a></li>
-        <li class="nav-item"><a class="nav-link" href="../finalproject/index.html">Final Project</a></li>
-        <li class="nac-item"><a class="nav-link" href="../index_working.html">Home</a></li>
-      </ul>
+        <main>
+            <article class="article-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Jessica Cain still remembers it clearly.</p>
+                        
+                        <p>Scared, standing next to her photographer while he calls the police. The man in front of her shouting obscenities, refusing to go away. The approaching noise of sirens as the man retreats to his porch.</p>
+                        
+                        <p>"He's like, 'I hate the media, she shouldn't be here, she has no right to be here.' And I remember the police officer being like, 'Well, that's a real nice theory, but this is a public street,'" Cain said.</p>
+                        
+                        <p>Cain was working as a reporter in Syracuse – for her – it was one of the first times she faced hostility for doing her job. Another time involved a poll worker being rude to her during a story.</p>
+                        
+                        <p>"[It] probably would have made her life easier in a few weeks when more people know what they're doing on election day, and it was just unnecessary," Cain said. "People are just starting to get more annoyed."</p>
+                        
+                        <p>Cain's experiences are not unique to her – or to Syracuse. Across the country, anti-media sentiments have risen, in part due to the constant rhetoric against journalists by President Donald Trump.</p>
+                        
+                        <p>In his first term, Mr. Trump accused the media of being "an enemy of the American people" – from there, his attacks have not stopped. His tactics to sow distrust of journalists has worked.</p>
+                        
+                        <p>In a poll published in 2023 by the Knight Foundation, the majority of respondents – across nearly all factors – have a less than favorable view of the media.</p>
+                        
+                        <!-- Map Embed -->
+                        <div class="my-4">
+                            <div class="map-container">
+                                <iframe src="https://uploads.knightlab.com/storymapjs/cae894160f4e1ecf1e94c30dd3c8f7b9/final-map/index.html"></iframe>
+                            </div>
+                        </div>
+                        <!--Story -->
+                        <p>The sweeping discontent for the media isn't purely based on Mr. Trump's work alone. The rise of social media platforms have given anyone the opportunity to break news – though it often leads to misinformation and unchecked-claims being spread.</p>
+                        
+                        <p>"When I do a story, it just doesn't go on air, right? I have to pitch it to my boss," Cain said. "People still are so distrustful, and then I feel like they'll see something on Twitter with no basis, no guardrails, and they'll just run with it."</p>
+                        
+                        <p>"I feel like people don't have a tolerance for any information that doesn't align with what they want to be true."</p>
+                        
+                        <p>It's a sentiment Cain shares that – in the days of network news led by towering figures of journalism like Walter Cronkite – would not be as prevalent. However, the new age of news that caters to the consumer has resulted in an echo chamber where a reader can only see the information that they want to see – critically hurting objectivity.</p>
+                        
+                        <p>However, those who reminisce the days of old are at the forefront of the issue. Much of the distrust in media comes from age groups who were alive in the heyday of Cronkite. 51% of Baby Boomers and 56% of Generation X respondents held an unfavorable view of the media. That generational distrust has bled into younger generations as well – Both Millennials and Generation Z also showed a majority-negative view.</p>
+                        
+                        <!-- Generation Graph Embed -->
+                        <div class="text-center my-4 chart-container">
+                            <iframe title="Opinion of the News Media by Generation" aria-label="Multiple Columns" id="datawrapper-chart-KHdct" src="https://datawrapper.dwcdn.net/KHdct/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="348" data-external="1"></iframe>
+                            <script type="text/javascript">
+                                !function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+                            </script>
+                        </div>
+                        
+                        <p>Where Mr. Trump factors in, though, is the political polarization. 32% of respondents who identified as Democrats held an unfavorable view; their red counterparts, however, held a sweeping 82% unfavorable view.</p>
+                        
+                        <p>"People see themselves more aligned politically than ever before and it's more us versus them. So, I think we're a very divided society," Cain said.</p>
+                        
+                        <!-- Party Views Graph Embed -->
+                        <div class="text-center my-4 chart-container">
+                            <iframe title="View of the Media by Political Party" aria-label="Multiple Columns" id="datawrapper-chart-91HqR" src="https://datawrapper.dwcdn.net/91HqR/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="402" data-external="1"></iframe>
+                            <script type="text/javascript">
+                                !function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r,i=0;r=e[i];i++)if(r.contentWindow===a.source){var d=a.data["datawrapper-height"][t]+"px";r.style.height=d}}}))}();
+                            </script>
+                        </div>
+                        
+                        <p>A worrying trend has emerged across party lines – more and more, right-leaning respondents have no confidence in the news media – almost a direct inverse to those who consider themselves left-leaning. 78% of right-leaning respondents agreed that there is so much bias in the news media that finding the truth can be hard to confirm; 74% of left-leaning respondents said the opposite.</p>
+                        
+                        <p>In such a politically tumultuous time, what can journalists do to regain the public's trust – especially from those who believe the media is skewed against them?</p>
+                        
+                        <p>"Part of me says go back to those Woodward and Bernstein strategies where we're just doing the shoe leather reporting and we're getting our feet on the ground," Cain said. "But I also think you have to reach people where they are. As people age into being news consumers more, you have to find a way to reach them early, and A – show them why it's important and B – show them why they can trust you."</p>
+                        
+                        <p>Still, Cain said she knows there is no pleasing some.</p>
+                        
+                        <p>"The more I'm in this, the more I'm realizing in this Trump era that there just will be some people you won't reach. There are some people who just hate you because you are media and you're a journalist."</p>
+                        
+                        <p>As the world braces itself for the next 3+ years of a Trump-run America, journalists are at the forefront of the battle for truth. Whether their voice will be heard, or buried under the rubble of misinformation, is still yet to be seen.</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+        
+        <footer class="mt-5 pt-3 border-top text-center text-muted">
+            <p class="small">&copy; 2025 Jackson Breslin. All rights reserved.</p>
+        </footer>
     </div>
-  </div>
-</nav>
 
-<h1 class="roboto-slab">Coming Soon...</h1>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
